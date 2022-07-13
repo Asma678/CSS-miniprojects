@@ -1,0 +1,163 @@
+.container {
+    width: auto;
+    height: 100vh;
+    background-image: url("./sky.jpg");
+    background-size: cover;
+    background-position: center;
+    border-left: 10px solid orange;
+    border-top: 10px solid white;
+    border-right: 10px solid green;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+.heading {
+    display: flex;
+    justify-content: center;
+  }
+.h1, .h2, .h3 {
+  margin: 0 0.2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.h1 {
+  background-color: orange;
+}
+
+.h2 {
+  background-color: white;
+}
+
+.h3 {
+  background-color: green;
+}
+
+.car {
+    width: 30vw;
+    height: 74px;
+    position: relative;
+    animation: movecar 4s infinite linear;
+    top: -270px;
+}
+@keyframes movecar{
+    from{
+         left: 0;
+    }
+    to{
+      left: 100vw;
+    }
+}
+.car-image {
+    width: 218px;
+
+}
+.wheel1 , .wheel2 {
+    width: 40px;
+    position: absolute;
+    animation: rotate 1s infinite linear;
+
+}
+.city{
+    background-image: url(./city.png);
+    height: 400px;
+    background-size: cover;
+   animation: city 4s linear infinite;
+}
+@keyframes city{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 90vw;
+    }
+}
+
+.wheel1{
+    left: 20px;
+    bottom: 0px;
+    top: 50px;
+}
+.wheel2{
+    bottom: 2px;
+    right: 180px;
+    top: 50px;
+}
+body{
+    margin: 0;
+}
+.road{
+    background-image: url(./road.jpg);
+    height: 320px;
+    animation:road 4s linear infinite;
+}
+
+@keyframes road{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 90vw;
+    }
+}
+
+
+ @keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+ }
+
+ .flag {
+    position: absolute;
+    bottom: 100px;
+    animation: moveflag 4s infinite linear;
+  }
+  @keyframes moveflag{
+    from{
+         left: 0;
+    }
+    to{
+      left: 100vw;
+    }
+}
+  
+  .flag img {
+    width: 2rem;
+    height: 2rem;
+   margin-left: 160px;
+  }
+  
+  .sun {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+  
+  .sun img {
+    width: 4rem;
+    height: 4rem;
+    animation: sun 2s linear infinite;
+  }
+  
+  .sun {
+    width: 4rem;
+    height: 4rem;
+    background-image: url("./sun.png");
+    position: absolute;
+    top: 10;
+    display: block;
+    z-index: 0;
+    background-repeat: repeat-x;
+    animation: city 100s linear infinite;
+  }
+  
+  @keyframes sun {
+    100% {
+      transform: translateX(-0.6px);
+    }
+  }
+  

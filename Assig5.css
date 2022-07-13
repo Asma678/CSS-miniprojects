@@ -1,0 +1,304 @@
+body{
+    background-color: rgb(215, 215, 52);
+
+}
+.first {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  
+  .Boxes ol {
+    text-align: center;
+    font-weight: 800;
+  }
+
+  .box1 {
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 60px;
+
+}
+
+.box2 {
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    justify-content: center;
+
+}
+
+.box3 {
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    justify-content: center;
+
+}
+
+.box4 {
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    justify-content: center;
+
+}
+  
+  .t1 {
+    width: 92px;
+    height: 92px;
+    background-color: rgb(34, 86, 106); 
+    transform:skewX(20deg);
+
+    animation: s1 3s linear infinite;
+    
+}
+.t1:hover {
+    transform:skewX(-20deg);
+}
+
+@keyframes s1 {
+    0% {
+        transform: skewX(-20deg);
+    }
+
+    50% {
+        transform: skewX(20deg);
+    }
+
+    100% {
+        transform: skewX(-20deg);
+    }
+}
+
+
+.t2 {
+    width: 92px;
+    height: 92px;
+    background-color: rgb(93, 91, 91);
+    animation: s2 3s linear infinite;
+}
+
+@keyframes s2 {
+    0% {
+        transform: skewY(-20deg);
+    }
+
+    50% {
+        transform: skewY(20deg);
+    }
+
+    100% {
+        transform: skewY(-20deg);
+    }
+}
+
+.t3 {
+    width: 92px;
+    height: 92px;
+    background-color: rgb(15, 75, 99);
+    animation: s3 2.5s infinite;
+    animation-timing-function: cubic-bezier(0.2, 0.64, 0.43, 1.02);;
+
+}
+
+@keyframes s3 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.t41 {
+    width: 92px;
+    height: 92px;
+    background-color:gray;
+    animation: s4 4s linear infinite;
+}
+
+@keyframes s4 {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(70deg);
+    }
+
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+.t42 {
+    width: 92px;
+    height: 92px;
+    background-color: brown;
+    animation: s5 4s linear infinite;
+}
+
+@keyframes s5 {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(70deg);
+    }
+
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+.t43 {
+    width: 92px;
+    height: 92px;
+    background-color:green;
+    animation: s6 5s linear infinite;
+}
+
+@keyframes s6 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(110deg);
+    }
+
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.second {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+.Boxes1 ol {
+    text-align: center;
+    font-weight: 800;
+  }
+
+  .b1 {
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 60px;
+    transition-property: all;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(7, 101, 70);
+    transition-duration: 2s;
+}
+.b1:hover{
+    width: 200px;
+}
+
+.b2 {
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 76, 52);
+    transition-duration: 2s;
+
+}
+.b2:hover{
+    width: 300px;
+    height: 300px;
+}
+
+.b3 {
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(8, 86, 60);
+    transition-duration: 2s;
+
+}
+.b3:hover{
+    width: 220px;
+}
+
+.b4 {
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(7, 88, 61);
+    transition-duration: 2s;
+}
+.b4:hover{
+    width: 230px;
+}
+.b5 {
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 67, 47);
+    transition-duration: 3s;
+}
+.b5:hover{
+    width: 240px;
+}
+.b6 {
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(11, 137, 95);
+    transition-duration: 2s;
+}
+.b6:hover{
+    width: 250px;
+}
+.b7 {
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(3, 72, 49);
+    transition-duration: 2s;
+}
+.b7:hover{
+    width: 260px;
+}
+
+
